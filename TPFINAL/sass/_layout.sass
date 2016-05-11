@@ -1,0 +1,286 @@
+/* CSS Document  */
+/* Project name: TP FINAL */
+/* File name: styles.css */
+/* Description: Hoja de estilos */
+/* Creation date: Mayo de 2016 */
+/* Author: Lucas Suárez, Nelson Scafidi, Carlos Bianchi */
+/* Author's eMail: lucasemmsuarez@gmail.com, nelson.scafidi@outlook.com.ar, cj.bianchi@yahoo.com.ar */
+
+
+body
+	padding: 80px auto
+
+.wrapper
+	max-width: $main-width*1px
+	margin: 0 auto
+
+.cleaner
+	+clearfix
+
+.section-title
+	font-size: 2.5em
+	margin: 0 auto
+
+.section-subtitle
+	font-size: 1em
+	margin: 0 auto
+	position: relative
+
+.navbar-default
+	background-color: #2E2E2E
+	border: none
+
+.navbar-toggle
+	border: none
+	background-color: $main-color
+	color: #fff
+	&:hover,
+	&:active,
+	&:focus
+		background-color: $main-color !important
+
+.navbar-nav
+	li
+		a
+			font-family: $main-font
+			color: #fff
+			text-transform: uppercase
+			&:hover,
+			&:active,
+			&:focus
+				color: $main-color !important
+	.active
+		a
+			color: #fed136
+			background-color: transparent !important
+
+
+.logo
+	width: 75px
+	height: auto
+	margin: 5px 0 5px 60px
+
+.form-group
+	input
+		background-color: #868686
+		color: #ECE4E4
+		border: none
+
+.bg-primary
+	padding: 10px
+	font-family: $main-font
+	background-color: rgba(0,0,0,0.3)
+	+b-ra(50px)
+
+.section-title
+	text-align: center
+	font-family: $main-font
+
+.mitad
+	font-family: $main-font
+	width: 45%
+	margin: 2em
+	float: left
+
+.mitad-2
+	font-family: $main-font
+	width: 45%
+	margin: 2.5%
+	float: left
+	img
+		width: 100%
+		align-content: left
+		padding-left: 5%
+		margin-top: 5%
+
+.mitad-2i
+	font-family: $main-font
+	width: 45%
+	margin: 2.5%
+	float: left
+	img
+		width: 100%
+		align-content: left
+		padding-left: 5%
+		margin-top: 5%
+
+.contenedor-about
+	strong
+		color: $comp-color
+
+
+.portfolio-item
+	margin: 0 auto 40px
+	max-width: 400px
+
+.portfolio-item
+	figure
+		position: relative
+		img
+			+b-ra(10px)
+
+.portfolio-item
+	figure div
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.8)
+		opacity: 0
+		+ttion(500ms)
+
+.portfolio-item
+	figure div span 
+		position: absolute
+		left: 50%
+		top: 50%
+		color: #FFFFFF
+		font-size: 50px
+		+ttion(300ms)
+
+.portfolio-item
+	figure:hover
+		div
+			opacity: 1
+
+.portfolio-item
+	figure:hover
+	div
+	span
+		transform: translate(-50%, -50%) scale(1)
+
+.modal-content
+	img
+		margin: 0 auto
+
+.blue-ball
+	width: 70px
+	height: 70px
+	display: block
+	background-color: #343434
+	-webkit-border-radius: 50%
+	text-align: center
+	font-size: 3em
+	left: 0
+	margin-top: -60px
+	span
+		margin-top: 20%
+		font-size: 60%
+		color: #A5A3A3
+	+b-ra(50%)
+
+.novedades
+	padding-left: 25px
+
+
+/*teammmmm*/
+
+
+.team
+	margin-bottom: 1em
+
+.image-team
+	border: solid 8px #CCCBCB
+	width: 70%
+	height: 70%
+	+b-ra(50%)
+	&:hover
+		opacity: 1
+		transform: translate(0,0) scale(1.2)
+		+ttion(500ms)
+
+.elementos-team
+	margin-top: 1em
+	.col-md-4
+		width: 33.33333%
+	
+
+.redes-team
+	img
+		margin: 0 5px
+		width: 25px
+		height: 25px
+		+b-ra(50%)
+
+
+
+
+
+#contact
+	+padding
+
+#team
+	background-color: $third-color
+	+padding
+
+#portfolio
+	background-color: $third-color
+	+padding
+
+#novedades
+	+padding
+
+#about-me
+	+padding
+
+
+//contactttt
+
+.contact-input
+	margin-top: 30px
+	margin-bottom: 30px
+
+.contact-button
+	text-align: center
+	input		
+		background-color: $comp-color
+		color: $main-color
+		text-transform: uppercase
+		font: 400 18px $main-font
+		padding: 15px 30px
+		+b-ra(5px)
+		&:hover
+			color: $comp-color
+
+//foter
+
+footer
+	background-color: #2E2E2E
+	color: white
+	padding: 35px
+
+footer
+	div
+		font-size: 10px
+		padding: 0
+
+footer
+	nav
+		float: right
+		color: white
+
+footer
+	a
+		color: white
+
+footer
+	nav
+	li
+		display: inline-block
+		margin-left: 15px
+		font-size: 10px
+
+.modal-content
+	min-height: 100vh
+	min-width: 100vw
+	background-color: rgba(0,0,0,0.6)
+	border-radius: 0
+	img
+		margin: auto
+
+.modal-body
+	background-color: rgba(255,255,255,0.8)
+	margin-top: 2em
+	.btn
+		margin-top: 10px

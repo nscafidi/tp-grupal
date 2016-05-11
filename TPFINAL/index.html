@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galería de Libros</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- ion-icons -->
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- hoja de estilos -->
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<!--
+/* HTML Document  */
+/* Project name: TP FINAL */
+/* File name: INDEX.HTML */
+/* Description: MAQUETADO */
+/* Creation date: Mayo de 2016 */
+/* Author: Lucas Suárez, Nelson Scafidi, Carlos Bianchi */
+/* Author's eMail: lucasemmsuarez@gmail.com, nelson.scafidi@outlook.com.ar, cj.bianchi@yahoo.com.ar */-->
+
+
+<body>
+
+<!-- navbar -->
+<div class="container">
+	<header class="wrapper">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+						<span class="sr-only">MENU</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="images/logo.png" alt="logo" class="logo">
+				</div>
+				<div class="collapse navbar-collapse" id="navbar1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about-me" class="page-scroll">Misión</a></li>
+						<li><a href="#portfolio" class="page-scroll">Libros</a></li>
+						<li><a href="#novedades" class="page-scroll">Novedades</a></li>
+						<li><a href="#contact" class="page-scroll">Contacto</a></li>
+					</ul>
+						<form action="#" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Buscar">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>		
+	</header>
+</div>
+
+
+<!-- banner -->
+<section class="banner">
+	<br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+				<li data-target="#myCarousel" data-slide-to="6"></li>
+				<li data-target="#myCarousel" data-slide-to="7"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="banner/banner1.jpg" class="img-responsive" alt="banner1">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Escanea el código QR y descarga el libro a tu celular o tablet</h3></div>
+				</div>
+				<div class="item">
+					<img src="banner/banner2.jpg" class="img-responsive" alt="banner2">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Escriba su historia, reciba donaciones y financie sus proyectos</h3></div>
+				</div>		
+				<div class="item">
+					<img src="banner/banner3.jpg" class="img-responsive" alt="banner3">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Feria Internacional del libro - Buenos aires, Argentina</h3></div>
+				</div>
+				<div class="item">
+					<img src="banner/banner4.jpg" class="img-responsive" alt="banner4">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Libros infantiles para imprimir y colorear</h3></div>
+				</div>
+				<div class="item">
+					<img src="banner/banner5.jpg" class="img-responsive" alt="banner5">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">La lectura es a la mente lo que el ejercicio al cuerpo</h3></div>
+				</div>
+				<div class="item">
+					<img src="banner/banner6.jpg" class="img-responsive" alt="banner6">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Donar un libro es abrir oportunidades</h3></div>
+				</div>
+				<div class="item">
+					<img src="banner/banner7.jpg" class="img-responsive" alt="banner7">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Contale una historia a un niño y cambiarás la Historia</h3></div>
+				</div>
+				<div class="item">
+					<img src="banner/banner8.jpg" class="img-responsive" alt="banner8">
+					<div class="carousel-caption">
+					<h3 class="bg-primary">Libros comprometidos con el planeta. Menos papel, Mas verde</h3></div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Siguiente</span>
+			</a>
+		</div>
+</section>
+<div class="cleaner"></div>
+
+
+<!-- ABOUT ME -->
+<section id="about-me">
+	<article class="wrapper">
+		<div class="container"><br><br>
+			<h2 class="section-title">Nuestra Misión</h2>
+			<article class="contenedor-about"><br>
+				<div class="mitad"><p>Bienvenidos a <strong>SMARTBOOK</strong>, la comunidad de lectura independiente cuya misión es unir a los mas entusiastas autores no reconocidos con los fieles lectores de todo el mundo. Promoviendo así la cultura, incentivando a nuevos autores independientes a crear historias y alentando la actividad como una de las principales fuentes de conocimientos y educación. Descubra en smartbook.gq una gran cantidad de títulos nunca publicados, encuentre nuevas emociones, personajes, historias y aventuras.</p></div>
+				<div class="mitad"><p><strong>SMARTBOOK</strong> es un espacio creado gracias a la colaboración de todos sus usuarios, autores y lectores. Por sus aportaciones estamos siempre actualizando los datos sobre toda clase de libros y en distintos idiomas. A su vez, ofrecemos desinteresadamente la oportunidad para los autores de recibir donaciones por parte de sus propios lectores, ademas de la difusión gratuita de sus obras y la posibilidad de nuevos contactos editoriales y/o de medios audiovisuales.</p></div>
+				<div class="separator"></div>
+			</article>
+		</div>
+	</article>
+</section>
+<div class="cleaner"></div>
+
+
+<!--PORFOLIO-->
+
+<section id="portfolio">
+	<article class="wrapper">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-12"><br><br>
+					<h2 class="section-title">Libros</h2><br>
+					<p class="section-subtitle">Historias desconocidas, de autores desconocidos...</p>
+					<br><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01" data-toggle="modal">
+								<img src="portfolio/tapa1.jpg" alt="Libro 01" class="img-responsive">
+								<div>
+									<span class="glyphicon glyphicon-plus"></span>
+								</div>
+							</a>
+						</figure>
+						<article class="portfolio-caption text-center">
+							<h4>El Paraíso</h4>
+							<p class="text-muted">Blake Crouch</p>
+						</article>
+					</article>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-02" data-toggle="modal">
+								<img src="portfolio/tapa2.jpg" alt="Libro 02" class="img-responsive">
+								<div>
+									<span class="glyphicon glyphicon-plus"></span>
+								</div>
+							</a>
+						</figure>
+						<article class="portfolio-caption text-center">
+							<h4>Otra Vida</h4>
+							<p class="text-muted">Per Olov Enquist</p>
+						</article>
+					</article>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-03" data-toggle="modal">
+								<img src="portfolio/tapa3.jpg" alt="Libro 03" class="img-responsive">
+								<div>
+									<span class="glyphicon glyphicon-plus"></span>
+								</div>
+							</a>
+						</figure>
+						<article class="portfolio-caption text-center">
+							<h4>El Universo de lo Sencillo</h4>
+							<p class="text-muted">Pablo Arribas</p>
+						</article>
+					</article>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-04" data-toggle="modal">
+								<img src="portfolio/tapa4.jpg" alt="Libro 04" class="img-responsive">
+								<div>
+									<span class="glyphicon glyphicon-plus"></span>
+								</div>
+							</a>
+						</figure>
+						<article class="portfolio-caption text-center">
+							<h4>Cabaret Biarritz</h4>
+							<p class="text-muted">José C. Vales</p>
+						</article>
+					</article>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-05" data-toggle="modal">
+								<img src="portfolio/tapa5.jpg" alt="Libro 05" class="img-responsive">
+								<div>
+									<span class="glyphicon glyphicon-plus"></span>
+								</div>
+							</a>
+						</figure>
+						<article class="portfolio-caption text-center">
+							<h4>El ermitaño</h4>
+							<p class="text-muted">Thomas Rydahl</p>
+						</article>
+					</article>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-06" data-toggle="modal">
+								<img src="portfolio/tapa6.jpg" alt="Libro 06" class="img-responsive">
+								<div>
+									<span class="glyphicon glyphicon-plus"></span>
+								</div>
+							</a>
+						</figure>
+						<article class="portfolio-caption text-center">
+							<h4>Paranoia</h4>
+							<p class="text-muted">Franck Thilliez</p>
+						</article>
+					</article>
+				</div>				
+			</div>
+		</div>
+	</article>
+</section>
+<div class="cleaner"></div>
+
+
+
+<!-- Novedades -->
+<section id="novedades">
+	<article class="wrapper">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12"><br><br>
+					<h2 class="section-title">Novedades</h2><br>
+					<p class="section-subtitle">Todo lo que tenés que saber.</p>
+					<br>
+				</div>
+			</div>
+			<div class="separator"></div>
+			<!-- services -->
+			<section class="services">
+				<div class="mitad-2">
+					<!--Service1-->
+					<table>
+						<tr>
+							<th>
+								<span class="blue-ball">
+									<span class="glyphicon glyphicon-pencil"></span>
+								</span>
+							</th>
+							<th class="novedades">
+								<h2>Cursos</h2>
+								<p>CURSOS PRESENCIALES Y A DISTANCIA<br>> Iniciación a la Escritura Creativa<br>> Literatura Fantástica<br>> Redacción y estil<br>> Escritura autobiográfica</p>
+							</th>
+						</tr>
+					
+					<!--Service2-->
+					
+						<tr>
+							<th>
+								<span class="blue-ball">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</th>
+							<th class="novedades">
+								<h2>Eventos</h2>
+								<p>2016<br>> Feria Internacional del Libro<br>> Firma de ejemplares<br>> Presentaciones literarias<br>> Próximos lanzamientos</p>
+							</th>
+						</tr>
+					
+					<!--Service3-->
+					
+						<tr>
+							<th>
+								<span class="blue-ball">
+									<span class="glyphicon glyphicon-usd"></span>
+								</span>
+							</th>
+							<th class="novedades">
+								<h2>Inversores</h2>
+								<p>PROGRAMA DE INVERSORES<br>Lo ponemos en contacto con los autores independientes mas destacados de todo el mundo. Destinado a Editoriales, Medios Audiovisuales, Compañias Teatrales y todo aquel Grupo o Individuo interesado en invertir sobre alguna de las obras publicadas en nuestro sitio.</p>
+							</th>
+						</tr>
+					</table>
+				</div>
+				<div class="mitad-2i">
+					<img src="images/ebooks.jpg" alt="ebooks">
+				</div>
+			</section>
+		</div>
+	</article>
+</section>
+<div class="cleaner"></div>
+
+
+<!--TEAM TEAM TEAM-->
+
+<section id="team">
+	<article class="wrapper">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12"><br><br>
+					<h2 class="section-title">Equipo</h2><br>
+					<p class="section-subtitle">Trabajamos ad-honorem a favor de la cultura.</p>
+					<br>
+				</div>
+				<div class="separator"></div>
+			</div>
+			<div class="row elementos-team">	
+				<section class="portfolio-caption text-center">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<article class="team">
+							<figure>
+								<img src="images/carlos.png" alt="team 01" class="image-team">
+							</figure>
+							<article>
+								<h4>Carlos Bianchi</h4>
+								<p class="text-muted">Lead Designer</p>
+							</article>
+							<div class="redes-team">
+								<a href="http://twitter.com"><img src="iconos/twitter.png" alt="twitter"></a>
+								<a href="http://facebook.com"><img src="iconos/facebook.png" alt="facebook"></a>
+								<a href="http://instagram.com"><img src="iconos/instagram.png" alt="instagram"></a>
+							</div>
+						</article>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<article class="team">
+							<figure>
+								<img src="images/lucas.jpg" alt="team 01" class="image-team">
+							</figure>
+							<article>
+								<h4>Lucas Suárez</h4>
+								<p class="text-muted">Lead Designer</p>
+							</article>
+							<div class="redes-team">
+								<a href="http://twitter.com"><img src="iconos/twitter.png" alt="twitter"></a>
+								<a href="http://facebook.com"><img src="iconos/facebook.png" alt="facebook"></a>
+								<a href="http://instagram.com"><img src="iconos/instagram.png" alt="instagram"></a>
+							</div>
+						</article>
+					</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+						<article class="team">
+							<figure>
+								<img src="images/nelson.png" alt="team 01" class="image-team">
+							</figure>
+							<article>
+								<h4>Nelson Scafidi</h4>
+								<p class="text-muted">Lead Designer</p>
+							</article>
+							<div class="redes-team">
+								<a href="http://twitter.com"><img src="iconos/twitter.png" alt="twitter"></a>
+								<a href="http://facebook.com"><img src="iconos/facebook.png" alt="facebook"></a>
+								<a href="http://instagram.com"><img src="iconos/instagram.png" alt="instagram"></a>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+		</div>
+	</article>
+</section>
+<div class="cleaner"></div>
+
+
+<!-- contact -->
+<section id="contact">
+	<article class="wrapper">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-12"><br><br>
+					<h2 class="section-title">Contacto</h2><br>
+					<p class="text-muted">Escribenos para enviar tus libros, comentarios o sugerencias.</p>
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<input type="text" class="form-control input-lg contact-input" placeholder="Nombre*">
+					<input type="email" class="form-control input-lg contact-input" placeholder="Email*">
+					<input type="tel" class="form-control input-lg contact-input" placeholder="Teléfono*">
+				</div>
+				<div class="col-md-6">
+					<textarea class="form-control  input-lg contact-input" rows="7" placeholder="Mensaje*"></textarea>
+				</div>
+			</div>
+			<div class="contact-button">
+				<input class="btn btn-default contact-button" type="submit" value="ENVIAR">
+			</div>
+		</div>
+	</article>
+</section>
+<div class="cleaner"></div>
+
+
+<!--footer-->
+<footer>      
+	<nav>
+		<ul>
+			<li><a href="#terminos">Términos y condiciones</a></li>
+			<li><a href="#myCarousel" class="page-scroll"> ˄ </a></li>
+		</ul>
+	</nav>
+	<div>© 2016 Lucas suárez, Nelson Scafidi, Carlos Bianchi. All right reserved.</div>
+	<div class="cleaner"></div>
+</footer>
+
+
+<!-- modal-content(oculto) -->
+<div class="modal fade" id="portfolio-01">
+	<div class="modal-content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body text-center">
+					<h2>El Paraiso <small>Blake Crouch</small></h2>
+					<p class="text-info">El agente federal Ethan Burke se dirige a Wayward Pines en busca de dos de sus colegas desaparecidos, uando el coche en el que viaja con un compañero se sale de la carretera. Unas horas más tarde Ethan despierta en medio de u pueblo encantador, un pueblo en el que los pájaros cantan y los niños corretean por las calles. No sabe dónde está, ni cómo salir de allí. Sin documentación ni dinero, Burke deberá desvelar los secretos de esta comunidad tan idílica en la que nada es lo que parece... Bienvenido a Wayward Pines, un lugar del que no querrás marcharte nunca...</p>
+					<br>
+					<p class="modal-text">¡Escanea el código QR y disfruta del libro en tu celular o tablet!</p>
+					<img class="img-responsive" src="portfolio/qr1.png" alt="portfolio">
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Volver
+					</button>
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-download"></span>
+					Descargar
+					</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="portfolio-02">
+	<div class="modal-content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body text-center">
+					<h2>Otra Vida <small>Per Olov Enquist</small></h2>
+					<p class="text-info">Las impactantes memorias del mejor escritor sueco contemporáneo.<br>Per Olov Enquist, considerado el mejor escritor sueco contemporáneo y eterno candidato al Premio Nobel, documenta sus memorias en una autobiografía escrita en tercera persona marcada profundamente por la ausencia de la figura paterna. Enquist hace balance de una vida errante, en la que el éxito literario le hizo caer en el alcoholismo. Un vívido fresco de sus peripecias vitales repleto de humor y honestidad, del que destaca su estilo mordaz y sin cortapisas.</p>
+					<br>
+					<p class="modal-text">¡Escanea el código QR y disfruta del libro en tu celular o tablet!</p>
+					<img class="img-responsive" src="portfolio/qr2.png" alt="portfolio">
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Volver
+					</button>
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-download"></span>
+					Descargar
+					</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="portfolio-03">
+	<div class="modal-content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body text-center">
+					<h2>El Universo de lo Sencillo <small>Pablo Arribas</small></h2>
+					<p class="text-info">El universo de lo sencillo es un proyecto de desarrollo y crecimiento personal que ya ha inspirado y ayudado a millones de internautas en la red. Su creador, Pablo Arribas, comparte en este libro 50 reflexiones para perseguir la felicidad con ilusión, optimismo y sencillez.<br>«Cada día se abre ante nosotros una ocasión extraordinaria para escuchar a nuestro corazón, olvidarnos de la imposibilidad, disfrutar el camino y devolverle a los sueños el decoro, la importancia y el lugar que merecen. Es hora de levantar la voz y recordarnos que solo tenemos una vida y que tiene que valer la pena.»</p>
+					<br>
+					<p class="modal-text">¡Escanea el código QR y disfruta del libro en tu celular o tablet!</p>
+					<img class="img-responsive" src="portfolio/qr3.png" alt="portfolio">
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Volver
+					</button>
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-download"></span>
+					Descargar
+					</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="portfolio-04">
+	<div class="modal-content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body text-center">
+					<h2>Cabaret Biarritz <small>José C. Vales</small></h2>
+					<p class="text-info">Georges Miet escribe por encargo historias populares para la editorial francesa La Fortune, hasta que un día su editor le pide una novela ''seria'' acerca de los trágicos hechos que habían conmocionado quince años antes la vibrante Biarritz de 1925, durante la temporada estival. Tras una terrible galerna el cadáver de una joven de la localidad aparece sujeto a una argolla en el muelle. Georges Miet se traslada allí y entrevista a una treintena de personas de distintos estratos sociales que de manera más o menos directa estuvieron relacionadas con la joven...</p>
+					<br>
+					<p class="modal-text">¡Escanea el código QR y disfruta del libro en tu celular o tablet!</p>
+					<img class="img-responsive" src="portfolio/qr4.png" alt="portfolio">
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Volver
+					</button>
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-download"></span>
+					Descargar
+					</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="portfolio-05">
+	<div class="modal-content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body text-center">
+					<h2>El ermitaño <small>Thomas Rydahl</small></h2>
+					<p class="text-info">En una árida playa de la isla de Fuerteventura aparece, en el maletero de un coche, el cuerpo sin vida de un bebé. No hay restos del conductor, no hay huellas, no hay denuncia, no hay, pues, caso. La policía quiere cerrar la investigación para evitar otro escándalo Madeleine. Pero no cuentan con Erhard, al que todos conocen como «el ermitaño»: tiene setenta años, nueve dedos, lleva casi veinte años de taxista en Fuerteventura, es afinador de pianos en sus ratos libres, un loco del jazz, algo bebedor, vive con dos cabras y, en sus momentos de relax, se sienta en una sillita plegable que lleva en el maletero del taxi a devorar novelas. Es peculiar, solitario, muy observador y tiene un pasado oculto...</p>
+					<br>
+					<p class="modal-text">¡Escanea el código QR y disfruta del libro en tu celular o tablet!</p>
+					<img class="img-responsive" src="portfolio/qr5.png" alt="portfolio">
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Volver
+					</button>
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-download"></span>
+					Descargar
+					</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="portfolio-06">
+	<div class="modal-content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body text-center">
+					<h2>Paranoia <small>Franck Thilliez</small></h2>
+					<p class="text-info">Ilan sigue sin recuperase de la pérdida de sus padres, fallecidos en extrañas circunstancias. Una mañana reaparece en París Chloé, su expareja, quien le propone embarcarse en una aventura a la que no podrá negarse. Nueve personas encerradas en un antiguo complejo psiquiátrico aislado en plena montaña. De repente, una a una empiezan a desaparecer. Encuentran un primer cuerpo. Asesinado. Se desata la Paranoia.</p>
+					<br>
+					<p class="modal-text">¡Escanea el código QR y disfruta del libro en tu celular o tablet!</p>
+					<img class="img-responsive" src="portfolio/qr6.png" alt="portfolio">
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Volver
+					</button>
+					<button type="button" class="btn" data-dismiss="modal">
+					<span class="glyphicon glyphicon-download"></span>
+					Descargar
+					</button>
+				</div>				
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- librería-jQuery -->
+<script src="js/jquery-1.12.3.min.js"></script>
+<!-- js-de-bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Animate-Scroll -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Custom-Scripts -->
+<script src="js/my-scripts.js"></script>
+
+</body>
+</html>
